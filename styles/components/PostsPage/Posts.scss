@@ -1,0 +1,225 @@
+.posts-page {
+    padding: 0 0 100px 0;
+
+    h2 {
+        font-weight: 600;
+        font-size: 36px;
+        color: #000000;
+    }
+
+    .nav-crops {
+        margin-bottom: 40px;
+    }
+
+    &__filters {
+        margin-bottom: 35px;
+
+        &__date {
+            color: #00000080;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: 0.1em;
+        }
+
+        &__status {
+            background: #006EB4;
+            padding: 3px 4px;
+            max-width: max-content;
+            margin-bottom: 10px;
+    
+            span {
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 10px;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: #fff;
+                display: -webkit-flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            & ~ h2 {
+                margin-bottom: 10px;
+                line-height: 140%;
+            }
+        }
+
+        &__btn {
+            cursor: pointer;
+            height: 32px;
+            padding: 0 10px;
+            border-radius: 4px;
+            transition: all .3s ease;
+
+            img {
+                width: 12px;
+                margin-right: 10px;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 500;
+                height: inherit;
+                margin: 0;
+                display: -webkit-flex;
+                align-items: center;
+            }
+
+            &:hover {
+                background: #f2f2f2;
+            }
+
+            &:last-child {
+                margin-left: 20px;
+            }
+        }
+    }
+
+    &__list {
+        display: -webkit-flex;
+        flex-direction: column;
+
+        &__item {
+            padding-bottom: 25px;
+            border-bottom: 1px solid #0000001A;
+            margin-bottom: 35px;
+            cursor: pointer;
+
+            p {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 25px;
+                letter-spacing: 0.02em;
+                margin-bottom: 20px;
+            }
+            
+            &__status {
+                background: #006EB4;
+                padding: 3px 4px;
+
+                span {
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 10px;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    color: #fff;
+                    display: -webkit-flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            &__date {
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 15px;
+                letter-spacing: 0.1em;
+                color: rgba(0, 0, 0, 0.3);
+                margin-left: 20px;
+            }
+        }
+    }
+
+    &__content {
+        font-size: 16px;
+        font-weight: 500;
+
+        ol {
+            margin: 5px 0;
+        }
+    }
+
+    &__icons {
+        margin-top: 40px;
+
+        & > img {
+            margin-right: 25px;
+            cursor: pointer;
+            transition: all .3s ease;
+
+            &:hover {
+                opacity: .8;
+            }
+        }
+    }
+}
+
+@media (max-width: 1020px) {
+    .posts-page {
+        padding: 0 0 35px 0;
+
+        h2 {
+            font-size: 20px;
+        }
+
+        .nav-crops {
+            margin-bottom: 15px ;
+        }
+
+        &__filters {
+            margin-bottom: 25px;
+
+            &__status {
+                height: 14px;
+            }
+
+            &__date, &__status span {
+                font-size: 8px;
+            }
+
+            &__btn {
+                img {
+                    margin-right: 0px;
+                }
+
+                &:last-child {
+                    margin-left: 5px;
+                }
+            }
+        }
+
+        &__mobile-none {
+            display: none !important;
+        }
+
+        &__list {
+            &__item {
+                margin-bottom: 16px;
+
+                p {
+                    font-size: 12px;
+                    line-height: 18px;
+                    margin-bottom: 15px;
+                }
+
+                &__status {
+                    height: 14px;
+                }
+
+                &__date {
+                    margin-left: 16px;
+                }
+
+                &__date, &__status span {
+                    font-size: 8px;
+                }
+            }
+        }
+
+        &__content {
+            font-size: 10px;
+        }
+
+        &__icons {
+            margin-top: 25px;
+            
+            img {
+                width: 15px;
+                margin-right: 15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+@import './Intro.scss';
+@import './Posts.scss';
+@import './Departments';
+@import './About';
+
+@media (max-width: 1020px) {
+    .main-page {
+        .main-slider {
+            height: 60vh;
+        }
+    }
+} 
+
+@media (max-width: 640px) {
+    .main-page {
+        .main-slider {
+            height: 150px;
+            margin-bottom: 80px !important;
+
+            &__icon {
+                width: 12px;
+                height: 12px;
+
+                &.left {
+                    left: 12px;
+                }
+
+                &.right {
+                    right: 12px;
+                }
+            }
+        }
+    }
+}

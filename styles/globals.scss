@@ -1,0 +1,80 @@
+@import './components/all';
+@import './layouts/all';
+@import './colors';
+@import './text';
+@import './animations';
+@import './scrollbar';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  color: var(--black-color);
+  font-family: 'Montserrat';
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat';
+  margin: 0;
+  color: var(--black-color);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.width-min {
+  min-width: min-content;
+  max-width: max-content;
+}
+
+.main-link {
+  color: var(--blue-color);
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all .3s ease;
+
+  &:hover {
+    opacity: .8;
+  }
+
+  & > img {
+    margin: 0 12px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+
+.main-container {
+  width: 1140px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media(max-width: 1200px) {
+  .main-container {
+    width: calc(100% - 40px);
+  }
+}
+
+
+// @media (prefers-color-scheme: dark) {
+//   html {
+//     color-scheme: dark;
+//   }
+//   body {
+//     color: white;
+//     background: black;
+//   }
+// }
+
+@media (max-width: 1020px) {
+  .main-link {
+    font-size: 14px;
+  }
+}
